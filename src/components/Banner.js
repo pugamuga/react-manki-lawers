@@ -23,7 +23,8 @@ const Banner = () => {
               className=" text-accent text-5xl 
             lg:text-6xl "
             >
-              it's yours<br /> <span className="lg:hidden">🐵</span>problem🐵
+              it's your
+              <br /> <span className="lg:hidden">🐵</span>problem🐵
             </span>
           </h1>
           <p className=" max-w-sm mx-auto mb-[50px] lg:mx-0 lg:max-w-[540px]">
@@ -34,7 +35,12 @@ const Banner = () => {
             fugiat.
           </p>
           <div className=" lg:absolute mx-auto max-w-[445px] lg:mx-0">
-            <Appointment />
+            <img
+              src={LaywerImage}
+              alt="small ape"
+              className="lg:hidden mx-auto"
+            />
+              <Appointment />
           </div>
         </div>
         <div className="hidden flex-1 lg:flex  lg:flex-col items-end">
