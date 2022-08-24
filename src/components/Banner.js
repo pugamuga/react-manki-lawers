@@ -2,6 +2,8 @@ import React from "react";
 import Appointment from "./Appointment";
 import Header from "./Header";
 
+import LaywerImage from "../assets/img/lawyer_banner.png";
+
 const Banner = () => {
   return (
     <section
@@ -14,10 +16,15 @@ const Banner = () => {
           <h1
             className=" font-primary font-black text-6xl 
             lg:text-7xl text-primary 
-            mb-4 lg:mt-[70px] leading-tight lg:leading-[90px]"
+            mb-4 lg:mt-[70px] leading-[60px] lg:leading-[80px]"
           >
             Your problem <br />
-            <span className=" text-accent"> Our Goal.</span>
+            <span
+              className=" text-accent text-5xl 
+            lg:text-6xl "
+            >
+              it's yours<br /> <span className="lg:hidden">🐵</span>problem🐵
+            </span>
           </h1>
           <p className=" max-w-sm mx-auto mb-[50px] lg:mx-0 lg:max-w-[540px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -26,7 +33,16 @@ const Banner = () => {
             Odio at ex, ipsam aliquid aut in enim ratione excepturi. Beatae,
             fugiat.
           </p>
-          <Appointment/>
+          <div className=" lg:absolute mx-auto max-w-[445px] lg:mx-0">
+            <Appointment />
+          </div>
+        </div>
+        <div className="hidden flex-1 lg:flex  lg:flex-col items-end">
+          <img
+            src={LaywerImage}
+            alt="banner"
+            className="w-[500px] drop-shadow-2xl mt-[100px]"
+          />
         </div>
       </div>
     </section>
