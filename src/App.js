@@ -1,11 +1,10 @@
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      <div>
-        <Navbar/>
-      </div>
+      <Header />
+      <div className="h-[2000px]"></div>
     </div>
   );
 }

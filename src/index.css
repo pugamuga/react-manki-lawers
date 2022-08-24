@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply h-54 font-body font-semibold text-sm tracking-wide rounded-sm w-full flex items-center justify-center uppercase text-white;
+  }
+  .textarea {
+    @apply w-full pl-4 pt-4 rounded-sm outline-none font-body text-sm text-gray focus:ring-1 focus:ring-primary min-h-[126px] resize-none;
+  }
+}
