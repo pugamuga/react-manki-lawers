@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Appointment from "./Appointment";
 import Header from "./Header";
+import { motion, AnimatePresence } from "framer-motion";
 
 import LaywerImage from "../assets/img/lawyer_banner.png";
 import LaywerImageHDR from "../assets/img/lawyer_banner_hdr.png";
+import Banana from "./Banana";
 
 const Banner = ({ firstState, secondState }) => {
   const [mankiClick, setMankiClick] = useState(false);
@@ -14,11 +16,11 @@ const Banner = ({ firstState, secondState }) => {
     >
       <Header firstState={firstState} secondState={secondState} />
       <div className=" container mx-auto h-full lg:flex pt-32">
-        <div className="text-center mx-auto h-full lg:text-left px-8 md:p-0">
+        <div className="text-center mx-auto h-full lg:text-left px-6 md:p-0">
           <h1
             className=" font-primary font-black text-6xl 
             lg:text-7xl text-primary 
-            mb-4 lg:mt-[70px] leading-[60px] lg:leading-[80px]"
+            mb-8 lg:mt-[70px] leading-[60px] lg:leading-[80px]"
           >
             Your problem <br />
             <span
@@ -46,6 +48,13 @@ const Banner = ({ firstState, secondState }) => {
               }lg:hidden mx-auto transition-all ease-in-out duration-700`}
             />
             <Appointment />
+            <AnimatePresence>
+                {
+                 mankiClick && (
+                  <Banana/>
+                 )
+                }
+              </AnimatePresence>
           </div>
         </div>
         <div className="hidden flex-1 lg:flex  lg:flex-col items-end">
@@ -55,6 +64,7 @@ const Banner = ({ firstState, secondState }) => {
             className="w-[500px] drop-shadow-2xl mt-[100px]"
           />
         </div>
+        {console.log(mankiClick)}
       </div>
     </section>
   );

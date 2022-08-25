@@ -1,13 +1,10 @@
-import React, { useState } from "react";
-
 import BarsIcon from "../assets/img/bars.png";
 import CloseIcon from "../assets/img/close.png";
 
 import { navigation } from "../data.js";
 import { Link } from "react-scroll";
 
-const NavMobile = ({firstState, secondState}) => {
-  //const [isOpen, setIsOpen] = useState(false);
+const NavMobile = ({ firstState, secondState }) => {
   return (
     <nav className="lg:hidden relative z-20">
       <button onClick={() => secondState(true)}>

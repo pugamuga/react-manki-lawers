@@ -15,7 +15,7 @@ const Nav = () => {
                 offset={-40}
                 activeClass="active"
                 smooth={true}
-                spy="try"
+                spy={true}
                 className="cursor-pointer hover:text-accent-hover transition-all duration-300"
               >
                 {item.name}

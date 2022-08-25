@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <section id="team" className="section">
       <div className=" container mx-auto text-center">
-        <h2 className="text-5xl font-primary mb-4">Our Attourneys</h2>
+        <h2 className="text-5xl font-primary mb-8">Our Attourneys</h2>
         <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-[60px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto saepe
           hic dolore expedita, cumque soluta quibusdam minima nesciunt aperiam

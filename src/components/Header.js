@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 
 import Logo from "../assets/ape_gif.gif";
+import { reverse } from "eth/core";
 
 const Header = ({ firstState, secondState }) => {
   const [bg, setBg] = useState(false);
@@ -25,10 +27,18 @@ const Header = ({ firstState, secondState }) => {
     >
       <div className=" container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img
+          <motion.img
             src={Logo}
             alt="logo"
             className="object-cover object-left h-16 w-16 "
+            animate={{ rotate: 360 }}
+            transition={{
+              repeatType: "reverse",
+              duration: 2,
+              delay: 1,
+              repeat: 1,
+              type: "spring",
+            }}
           />
           <h1 className=" ml-2 font-primary text-2xl">Manki Lawers</h1>
         </a>
