@@ -12,7 +12,7 @@ const Nav = () => {
             <li key={index}>
               <Link
                 to={item.href}
-                offset={-120}
+                offset={-40}
                 activeClass="active"
                 smooth={true}
                 spy="try"

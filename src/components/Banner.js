@@ -5,14 +5,14 @@ import Header from "./Header";
 import LaywerImage from "../assets/img/lawyer_banner.png";
 import LaywerImageHDR from "../assets/img/lawyer_banner_hdr.png";
 
-const Banner = () => {
+const Banner = ({ firstState, secondState }) => {
   const [mankiClick, setMankiClick] = useState(false);
   return (
     <section
       id="home"
       className="lg:h-full lg:max-h-800  bg-gradient-to-t from-[#f8f3ec] to-[#e0c8ac]"
     >
-      <Header />
+      <Header firstState={firstState} secondState={secondState} />
       <div className=" container mx-auto h-full lg:flex pt-32">
         <div className="text-center mx-auto h-full lg:text-left px-8 md:p-0">
           <h1

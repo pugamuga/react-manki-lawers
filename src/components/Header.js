@@ -5,7 +5,7 @@ import NavMobile from "./NavMobile";
 
 import Logo from "../assets/ape_gif.gif";
 
-const Header = () => {
+const Header = ({ firstState, secondState }) => {
   const [bg, setBg] = useState(false);
 
   useEffect(() => {
@@ -25,11 +25,15 @@ const Header = () => {
     >
       <div className=" container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-            <img src={Logo} alt="logo" className="object-cover object-left h-16 w-16 "/>
-            <h1 className=" ml-2 font-primary text-2xl">Manki Lawers</h1>
+          <img
+            src={Logo}
+            alt="logo"
+            className="object-cover object-left h-16 w-16 "
+          />
+          <h1 className=" ml-2 font-primary text-2xl">Manki Lawers</h1>
         </a>
-        <Nav/>
-        <NavMobile/>
+        <Nav />
+        <NavMobile firstState={firstState} secondState={secondState} />
       </div>
     </header>
   );
