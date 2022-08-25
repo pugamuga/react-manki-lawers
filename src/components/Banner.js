@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Appointment from "./Appointment";
 import Header from "./Header";
 
 import LaywerImage from "../assets/img/lawyer_banner.png";
+import LaywerImageHDR from "../assets/img/lawyer_banner_hdr.png";
 
 const Banner = () => {
+  const [mankiClick, setMankiClick] = useState(false);
   return (
     <section
       id="home"
@@ -36,16 +38,19 @@ const Banner = () => {
           </p>
           <div className=" lg:absolute mx-auto max-w-[445px] lg:mx-0">
             <img
-              src={LaywerImage}
+              src={LaywerImageHDR}
+              onClick={() => setMankiClick(!mankiClick)}
               alt="small ape"
-              className="lg:hidden mx-auto"
+              className={`${
+                mankiClick ? "w-[270px] " : "w-[200px] "
+              }lg:hidden mx-auto transition-all ease-in-out duration-700`}
             />
-              <Appointment />
+            <Appointment />
           </div>
         </div>
         <div className="hidden flex-1 lg:flex  lg:flex-col items-end">
           <img
-            src={LaywerImage}
+            src={LaywerImageHDR}
             alt="banner"
             className="w-[500px] drop-shadow-2xl mt-[100px]"
           />
