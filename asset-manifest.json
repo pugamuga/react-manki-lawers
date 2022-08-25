@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-manki-lawers/static/css/main.1bee54e6.css",
+    "main.js": "/react-manki-lawers/static/js/main.fc7f57f1.js",
+    "static/media/ape_gif.gif": "/react-manki-lawers/static/media/ape_gif.d9aeae14303bf311879e.gif",
+    "static/media/banana.png": "/react-manki-lawers/static/media/banana.0fa6e9162b30de5661fb.png",
+    "static/media/lawyer_banner_hdr.png": "/react-manki-lawers/static/media/lawyer_banner_hdr.b74952a6b3c30be66245.png",
+    "static/media/lawyer_banner.png": "/react-manki-lawers/static/media/lawyer_banner.bb96aab830081647029d.png",
+    "static/media/ape-phone.png": "/react-manki-lawers/static/media/ape-phone.f3036ec17f9a835e627b.png",
+    "static/media/lawyer1.png": "/react-manki-lawers/static/media/lawyer1.99b9aa08c8c1c7f41648.png",
+    "static/media/lawyer2.png": "/react-manki-lawers/static/media/lawyer2.184368fc6302e8e7c27f.png",
+    "static/media/lawyer3.png": "/react-manki-lawers/static/media/lawyer3.ce1a75401aafabd132f9.png",
+    "static/media/profile2.png": "/react-manki-lawers/static/media/profile2.20ef820dfe54ebedbc82.png",
+    "index.html": "/react-manki-lawers/index.html",
+    "main.1bee54e6.css.map": "/react-manki-lawers/static/css/main.1bee54e6.css.map",
+    "main.fc7f57f1.js.map": "/react-manki-lawers/static/js/main.fc7f57f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bee54e6.css",
+    "static/js/main.fc7f57f1.js"
+  ]
+}
